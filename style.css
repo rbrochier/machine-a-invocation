@@ -8,21 +8,25 @@ html {
   font-size: 16px;
 }
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   height: 100dvh;
   padding: 20px;
+  gap: 30px;
   background-image: url("./images/pexels-jplenio-14332269.jpg");
   background-size: cover;
   background-position: center;
-  flex-direction: column;
-  gap: 30px;
   font-family: "EB Garamond", serif;
-  background-color: #f0f0f0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #333;
-  display: flex;
+  background-color: #f0f0f0;
   justify-content: center;
   align-items: center;
 }
+
 h1 {
   font-family: "Cinzel", serif;
   font-size: 1.3rem;
@@ -68,14 +72,21 @@ form {
 }
 
 button {
-  padding: 10px 20px;
+  height: 54px;
   background-color: #2a572b;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  color: #fff7e2;
+  border: 2px solid #b8902f;
+  border-radius: 3px;
+  box-shadow:
+    inset 0 0 0 2px #1a3a1b,
+    0 4px 0 #15301a;
+  font-family: "Cinzel", serif;
+  font-size: 1px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   cursor: pointer;
-  font-size: 1rem;
-  font-family: inherit;
+  padding: 10px;
 }
 
 #invoquer {
@@ -93,6 +104,8 @@ button {
   text-transform: uppercase;
 }
 
+
+
 .cache {
   display: none;
 }
@@ -104,8 +117,21 @@ button:hover {
   transition: background-color 0.3s ease;
 }
 
+button:focus-visible {
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #message {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.1rem;
   }
 }
