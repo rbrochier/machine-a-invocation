@@ -5,33 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500..800;1,400..800&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+
     <title> La Machine à Invocation</title>
 </head>
 
 <body>
     <section>
         <h1> La Machine à Invocation </h1>
-        
 
-            <label for="prenom">Ton prénom :</label>
 
-            <input type="text" id="prenom">
+        <label for="prenom">Ton prénom :</label>
 
-            <label for="creature">Choisis ta créature magique :</label>
-               
-                    <option value="🐙 le Chat-Octo">🐙 le Chat-Octo</option>
-                    <option value="🐉 le Dragon-Debug">🐉 le Dragon-Debug</option>
-                    <option value="🦄 la Licorne-CSS">🦄 la Licorne-CSS</option>
-                    <option value="🦊 le Renard-Refacto">🦊 le Renard-Refacto</option>
+        <input type="text" id="prenom">
 
-                </select>
-       
-            <button type="submit">Invoquer !</button>
+        <label for="creature">Choisis ta créature magique :</label>
+        <form>
+            <select id="creature">
+
+                <option value="🐙 le Chat-Octo">🐙 le Chat-Octo</option>
+                <option value="🐉 le Dragon-Debug">🐉 le Dragon-Debug</option>
+                <option value="🦄 la Licorne-CSS">🦄 la Licorne-CSS</option>
+                <option value="🦊 le Renard-Refacto">🦊 le Renard-Refacto</option>
+
+            </select>
+
+            <button type="submit" id="invoquer">Invoquer !</button>
         </form>
 
     </section>
-    <section id="resultat">
-      <p id="message"></p>
+    <section id="resultat" class="cache">
+        <p id="message"></p>
     </section>
 
 
