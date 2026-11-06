@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 
 html, body {
     height: 100%;
-    fontsize: 16px;
+    font-size: 16px;
     background-image: url('./images/pexels-jplenio-14332269.jpg');
     background-size: cover;
     background-position: center;
+    flex-direction: column;
+    gap: 30px;
+  
 
 }
 h1 {
@@ -38,7 +42,7 @@ section {
     align-items: center;
     justify-content: center;
     width: 800px;
-    height: 600px;
+   padding: 20px;
     background-color: #fcf9f2;
     padding: 20px;
     border-radius: 10px;
@@ -47,7 +51,7 @@ section {
     font-size: 1.2rem;
     text-transform: uppercase;
     line-height: 3.5;
-    font-weight: 500;
+    
 }
 
 
@@ -86,6 +90,7 @@ button {
     font-size: 1,1rem;
     font-weight: 100;
 }
+
 
 
 .cache {
