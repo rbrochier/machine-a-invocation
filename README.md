@@ -2,7 +2,7 @@
 
 Une petite page web sur le thème du jeu de rôle : on entre son prénom, on choisit une créature, et elle répond à l'appel.
 
-Projet réalisé pour le Kata Web 5 du Bloc 1 à Ada Tech School, pour réviser les bases du front : HTML, CSS et DOM.
+Projet réalisé pour le Kata Web 4 du Bloc 1 à Ada Tech School, pour réviser les bases du front : HTML, CSS et DOM.
 
 Lancer le projet
 
